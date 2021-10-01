@@ -1,99 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/index.css">
-  <title>Курс по фотографии</title>
-</head>
-<body class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Курс по фотографии</title>
+  </head>
+  <body class="page">
+    <header class="header page__section">
+      <img class="header__logo" src="./images/logo.png" alt="" />
+      Композиция камера Поиск заказов
 
-  <header class="header page__section">
-    <img class="header__logo" src="./images/logo.png" alt="">
-    Композиция
-    камера
-    Поиск заказов
+      <div class="header__menu"></div>
+    </header>
 
-    <div class="header__menu">
+    <section class="welcome page__section">
+      <h1 class="welcome__title">Курс по фотографии</h1>
+      <img class="welcome__image" src="images/image-welcome.jpg" alt="" />
+      <div class="welcome__content">
+        <p class="welcome__text">
+          Фотография в природных условиях, уроки по композиции и по пользованию
+          камерой.
+        </p>
+        <a href="#" class="welcome__link">Подробнее</a>
+      </div>
+    </section>
 
-    </div>
-  </header>
+    <section class="composition page__section">
+      <div class="composition__heading">
+        <p class="composition__section-name">Композиция</p>
+        <h2 class="composition__title">Изучите композицию</h2>
+      </div>
+    
+      <img
+        class="composition__image"
+        src="images/image-composition.jpg"
+        alt=""
+      />
 
-  <section class="welcome page__section">
-    <h1 class="welcome__title">Курс по фотографии</h1>
-    <img class="welcome__image" src="images/image-welcome.jpg" alt="">
-    <p class="welcome__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-    <a class="welcome__link" href="#">Подробнее</a>
-  </section>
+      <div class="composition__content">
+        <p class="composition__text">
+          Вы изучите гармоничное размещение всех элементов изображения на
+          снимке.
+        </p>
+        <p class="composition__text">
+          Изучите композицию интуитивную и какие-то определённые законы.
+        </p>
+        <a class="composition__link" href="#">Записаться!</a>
+      </div>
 
-  <section class="composition page__section">
-    <p class="composition__section-name">Композиция</p>
-    <h2 class="composition__title">Изучите композицию</h2>
+      <ul class="composition__rule-list">
+        <ii class="composition__rule-item"
+          >Правило третей, при котором нужно распологать объекты на
+          пересечениях.</ii
+        >
+        <ii class="composition__rule-item"
+          >Простота: убирай всё лишнее и кадрируй!</ii
+        >
+        <ii class="composition__rule-item"
+          >Равновесие: уравновесь пятна объекта и фона.</ii
+        >
+        <ii class="composition__rule-item"
+          >3D глубина кадра: расположи объект позади и перед другими
+          предметами.</ii
+        >
+      </ul>
+    </section>
 
-    <img class="composition__image" src="images/image-composition.jpg" alt="">
+    <section class="setup page__section">
+      <p class="setup__section-name">камера</p>
+      <h2 class="setup__title">Настройка Съемка Обработка</h2>
 
-    <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на снимке.</p>
-    <p class="composition__text">Изучите композицию интуитивную и какие-то определённые законы.</p>
+      <img class="setup__image" src="images/image-setup.jpg" alt="" />
 
-    <a class="composition__link" href="#">Записаться!</a>
+      отзывы про часть о камерах:
 
-    <ul class="composition__rule-list">
-      <ii class="composition__rule-item">Првило третей, при котором нужно распологать объекты на пересечениях.</ii>
-      <ii class="composition__rule-item">Простота: убирай всё лишнее и кадрируй!</ii>
-      <ii class="composition__rule-item">Равновесие: уравновесь пятна объекта и фона.</ii>
-      <ii class="composition__rule-item">3D глубина кадра: расположи объект позади и перед другими предметами.</ii>
-    </ul>
+      <ul class="setup__review-list">
+        <li class="setup__review-item">
+          <article class="setup__review">
+            <p>
+              на этом курсе я научился пользоватся камерой, как настоящий
+              профессионал!
+            </p>
+            <h3>Питер, водитель.</h3>
+            <a>@piter123</a>
+          </article>
+        </li>
+        <li class="setup__review-item">
+          <article class="setup__review">
+            <p>
+              супер крутой курс! на части про фотики я стал разбираться в
+              предназначении кнопок
+            </p>
+            <h3>Джон, спортсмен.</h3>
+            <a>@john_sport</a>
+          </article>
+        </li>
+      </ul>
+    </section>
 
-  </section>
+    <section class="freelance page__section">
+      <p class="freelance__section-name">поиск заказов</p>
+      <h2 class="freelance__title">Научим находить заказы!</h2>
+      <img class="freelance__image" src="images/image-freelance.jpg" alt="" />
+      <p>
+        Мы научим вас искать заказы на всяких фриланс биржах, а когда вы
+        сделаете крутое портфолио, мы поможем найти постоянную работу.
+      </p>
+      <a class="freelance__link" href="#">Записаться!</a>
+    </section>
 
-  <section class="setup page__section">
-    <p class="setup__section-name">камера</p>
-    <h2 class="setup__title">Настройка Съемка Обработка</h2>
+    <section class="action page__section">
+      <h2 class="action__title">Записаться! Сейчас!</h2>
+      <form class="action__form">
+        <input value="Ваша почта" />
+        <button>Записаться</button>
+      </form>
+    </section>
 
-    <img class="setup__image" src="images/image-setup.jpg" alt="">
+    <footer class="footer page__section">
+      <p class="footer__copyright">2021 Photo-lessons.</p>
+    </footer>
 
-    отзывы про часть о камерах:
-
-    <ul class="setup__review-list">
-      <li class="setup__review-item">
-        <article class="setup__review">
-          <p>на этом курсе я научился пользоватся камерой, как настоящий профессионал!</p>
-          <h3>Питер, водитель.</h3>
-          <a>@piter123</a>
-        </article>
-      </li>
-      <li class="setup__review-item">
-        <article class="setup__review">
-          <p>супер крутой курс! на части про фотики я стал разбираться в предназначении кнопок</p>
-          <h3>Джон, спортсмен.</h3>
-          <a>@john_sport</a>
-        </article>
-      </li>
-    </ul>
-
-  </section>
-
-  <section class="freelance page__section">
-    <p class="freelance__section-name">поиск заказов</p>
-    <h2 class="freelance__title">Научим находить заказы!</h2>
-    <img class="freelance__image" src="images/image-freelance.jpg" alt="">
-    <p>Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.</p>
-    <a class="freelance__link" href="#">Записаться!</a>
-  </section>
-
-  <section class="action page__section">
-    <h2 class="action__title">Записаться! Сейчас!</h2>
-    <form class="action__form">
-      <input value="Ваша почта">
-      <button>Записаться</button>
-    </form>
-  </section>
-
-  <footer class="footer page__section">
-    <p class="footer__copyright">2021 Photo-lessons.</p>
-  </footer>
-
-  <script src="./scripts/index.js"></script>
-</body>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
