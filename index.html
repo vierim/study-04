@@ -8,11 +8,18 @@
     <title>Курс по фотографии</title>
   </head>
   <body class="page">
-    <header class="header page__section">
-      <img class="header__logo" src="./images/logo.png" alt="" />
-      Композиция камера Поиск заказов
 
-      <div class="header__menu"></div>
+    <header class="header page__section">
+      <img class="header__logo" src="./images/logo.png" alt="Логотип - Курс по фотографии" />
+
+      <nav class="header__navigation">
+        <button class="header__menu-button"></button>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#" class="header__link">Композиция</a></li>
+          <li class="header__menu-item"><a href="#" class="header__link">камера</a></li>
+          <li class="header__menu-item"><a href="#" class="header__link">Поиск заказов</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="welcome page__section">
@@ -23,16 +30,16 @@
           Фотография в природных условиях, уроки по композиции и по пользованию
           камерой.
         </p>
-        <a href="#" class="welcome__link">Подробнее</a>
+        <a href="#" class="button welcome__button">Подробнее</a>
       </div>
     </section>
 
-    <section class="composition page__section">
+    <section class="composition page__section page__section_vertical-xl">
       <div class="composition__heading">
         <p class="composition__section-name">Композиция</p>
         <h2 class="composition__title">Изучите композицию</h2>
       </div>
-    
+
       <img
         class="composition__image"
         src="images/image-composition.jpg"
@@ -41,13 +48,12 @@
 
       <div class="composition__content">
         <p class="composition__text">
-          Вы изучите гармоничное размещение всех элементов изображения на
-          снимке.
+          Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__bolder">снимке</span>.
         </p>
         <p class="composition__text">
           Изучите композицию интуитивную и какие-то определённые законы.
         </p>
-        <a class="composition__link" href="#">Записаться!</a>
+        <a class="button composition__button" href="#">Записаться!</a>
       </div>
 
       <ul class="composition__rule-list">
