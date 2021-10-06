@@ -23,3 +23,12 @@
   font-family: 'Roboto';
   font-weight: 700;
 }
+
+@font-face {
+  src:
+    url(./inter/Inter-Regular.woff2) format('woff2'),
+    url(./inter/Inter-Regular.woff) format('woff');
+
+  font-family: 'Inter';
+  font-weight: 400;
+}
