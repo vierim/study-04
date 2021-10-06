@@ -50,9 +50,22 @@
 
 .button:hover {
   cursor: pointer;
-  font-size: 14px;
-  line-height: 28px;
+  /* font-size: 14px;
+  line-height: 28px; */
   font-weight: 500;
+}
+
+.button_place_right {
+  padding: 13px 20px;
+  font-size: 11px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  box-sizing: border-box;
+  min-height: 50px;
+  border-radius: 0px 8px 8px 0px;
+  width: 38%;
+  max-width: 130px;
+  min-width: 105px;
 }
 
 .header {
@@ -261,10 +274,40 @@
 }
 
 .action__title {
-  margin: 0;
+  margin: 0 0 200px 0;
   font-size: 48px;
   font-weight: 400;
   line-height: 1.04;
+  color: #FFFFFF;
+}
+
+.action__button {
+
+}
+
+.order-form {
+  width: 100%;
+  display: flex;
+}
+
+.order-form__email {
+  width: 62%;
+  height: 50px;
+  border: 2px solid #000000;
+  border-right: none;
+  box-sizing: border-box;
+  padding: 13px 20px;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.order-form__email::placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 2.2;
+  letter-spacing: 0.375px;
+  font-family: 'Roboto';
 }
 
 .footer {
