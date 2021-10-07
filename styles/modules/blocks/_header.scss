@@ -18,6 +18,15 @@
     width: 30px;
     height: 30px;
 
+    @media (min-width: #{$tabletScreenSize}) {
+      width: 36px;
+      height: 36px;
+    }
+    @media (min-width: #{$desctopScreenSize}) {
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover {
       animation-delay: .4s;
       animation: figure-rotation 2s linear 1 forwards;
@@ -52,6 +61,11 @@
 
     &_opened {
       display: block;
+
+      @media (min-width: #{$tabletScreenSize}) {
+        display: flex;
+        
+      }
     }
   }
 

@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  width: 169px;
+  min-width: 169px;
   height: 40px;
   border: 2px solid #000000;
   background-color: #FFFFFF;
@@ -15,6 +15,12 @@
   box-sizing: border-box;
   padding: 4px 0;
   transition: all 300ms ease-in-out;
+
+  @media (min-width: #{$tabletScreenSize}) {
+    min-width: 228px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 
   &:hover {
     cursor: pointer;

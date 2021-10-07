@@ -24,22 +24,21 @@
 }
 .page {
   min-width: 320px;
-  max-width: 1440px;
   background-color: #FFFFFF;
-  margin: 0 auto;
   font-family: "Roboto", Arial, sans-serif;
 }
 .page__section {
   box-sizing: border-box;
   padding: 20px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 @media (min-width: 768px) {
   .page__section {
     padding: 40px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .page__section {
     padding: 50px;
   }
@@ -47,10 +46,22 @@
 .page__section_vertical-xl {
   padding-top: 40px;
 }
+@media (min-width: 768px) {
+  .page__section_vertical-xs {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .page__section_vertical-xs {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
 
 .button {
   display: inline-block;
-  width: 169px;
+  min-width: 169px;
   height: 40px;
   border: 2px solid #000000;
   background-color: #FFFFFF;
@@ -65,6 +76,13 @@
   box-sizing: border-box;
   padding: 4px 0;
   transition: all 300ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .button {
+    min-width: 228px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 .button:hover {
   cursor: pointer;
@@ -111,6 +129,18 @@
   width: 30px;
   height: 30px;
 }
+@media (min-width: 768px) {
+  .header__logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+}
 .header__logo:hover {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
@@ -144,6 +174,11 @@
 .header__menu_opened {
   display: block;
 }
+@media (min-width: 768px) {
+  .header__menu_opened {
+    display: flex;
+  }
+}
 .header__menu-item {
   margin-bottom: 12px;
   text-align: center;
@@ -171,6 +206,12 @@
   font-weight: 400;
   line-height: 1.19;
 }
+@media (min-width: 768px) {
+  .welcome__title {
+    font-size: 110px;
+    line-height: 1.1;
+  }
+}
 .welcome__image {
   max-width: 100%;
 }
@@ -179,6 +220,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
+}
+@media (min-width: 768px) {
+  .welcome__text {
+    max-width: 469px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 .welcome__button {
   margin-top: 30px;
