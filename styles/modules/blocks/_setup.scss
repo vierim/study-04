@@ -4,14 +4,44 @@
   display: grid;
   grid-gap: 60px;
 
+  @media (min-width: #{$desktopBreakpoint}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 180px;
+    grid-column-gap: 56px;
+  }
+
+  &__heading {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 20px;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
   &__section-name {
     margin: 0 0 30px;
-    border-top: 1px solid #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
     text-transform: uppercase;
-    padding-top: 20px;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 18px;
+      line-height: 1.56;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      margin-bottom: 50px;
+    }
   }
 
   &__title {
@@ -19,17 +49,60 @@
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 122px;
+      line-height: 1;
+    }
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      font-size: 64px;
+      line-height: 1.1;
+      max-width: 403px;
+    }
+
+    @media (min-width: #{$laptopBreakpoint}) {
+      font-size: 122px;
+      line-height: 1;
+      max-width: none;
+    }
   }
 
   &__image {
     max-width: 100%;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      width: 688px;
+      max-height: 656px;
+      object-fit: cover;
+    }
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      width: 100%;
+      max-height: none;
+
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
   }
 
   &__review-header {
     margin: 0;
     font-size: 14px;
     line-height: 1.43;
+    font-weight: 400;
     text-transform: uppercase;
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      align-self: end;
+    }
   }
 
   &__review-list {
@@ -39,11 +112,25 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width: #{$desktopBreakpoint}) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
   }
 
  &__review-item {
     padding: 30px 0;
     border-bottom: 1px solid #FFFFFF;
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-right: 172px;
+    }
 
     &:first-of-type {
       padding-top: 0;
@@ -52,6 +139,10 @@
     &:last-of-type {
       padding-bottom: 0;
       border-bottom: none;
+
+      @media (min-width: #{$desktopBreakpoint}) {
+        margin-right: 89px;
+      }
     }
   }
 
@@ -59,6 +150,12 @@
     margin: 0 0 30px;
     font-size: 24px;
     line-height: 1.08;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 43px;
+      line-height: 1;
+      margin-bottom: 60px;
+    }
   }
 
   &__review-person {
@@ -66,6 +163,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.43;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 18px;
+      line-height: 1.56;
+      margin-bottom: 10px;
+    }
   }
 
   &__review-link {
@@ -73,5 +176,10 @@
     line-height: 1;
     color: #ffffff;
     text-decoration: none;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }

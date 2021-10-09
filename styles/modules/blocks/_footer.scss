@@ -1,5 +1,5 @@
 .footer {
-  background-color: #DF2626;
+  background-color: $importantSectionColor;
   color: #FFFFFF;
 
   &__copyright {
@@ -7,6 +7,11 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 2;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 15px;
+      line-height: 1.6;
+    }
   }
 }
 

@@ -1,7 +1,13 @@
 .page {
-  min-width: #{$mobileScreenSize};
+  min-width: #{$mobileBreakpoint};
   background-color: #FFFFFF;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: $primaryFontFamily;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 
   &__section {
     box-sizing: border-box;
@@ -9,10 +15,10 @@
     margin: 0 auto;
     max-width: 1440px;
 
-    @media (min-width: #{$tabletScreenSize}) {
+    @media (min-width: #{$tabletBreakpoint}) {
       padding: 40px;
     }
-    @media (min-width: #{$desctopScreenSize}) {
+    @media (min-width: #{$desktopBreakpoint}) {
       padding: 50px;
     }
 
@@ -21,11 +27,11 @@
     }
 
     &_vertical-xs {
-      @media (min-width: #{$tabletScreenSize}) {
+      @media (min-width: #{$tabletBreakpoint}) {
         padding-top: 24px;
         padding-bottom: 24px;
       }
-      @media (min-width: #{$desctopScreenSize}) {
+      @media (min-width: #{$desktopBreakpoint}) {
         padding-top: 22px;
         padding-bottom: 22px;
       }
