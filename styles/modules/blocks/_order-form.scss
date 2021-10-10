@@ -1,9 +1,12 @@
 .order-form {
   width: 100%;
+  max-width: 553px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
   &__email {
-    width: 62%;
+    width: 63%;
     height: 50px;
     border: 2px solid #000000;
     border-right: none;
@@ -12,12 +15,18 @@
     border-radius: 8px 0px 0px 8px;
     cursor: pointer;
     font-size: 11px;
-    font-weight: 2.2;
+    line-height: 2.2;
+    font-weight: 400;
     letter-spacing: 0.375px;
     font-family: 'Roboto', Arial, sans-serif;
 
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
     &::placeholder {
-      color: #000000;
+      color: $primaryTextColor;
       opacity: 1;
     }
   }
