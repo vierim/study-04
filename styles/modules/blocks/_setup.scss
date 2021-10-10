@@ -1,14 +1,17 @@
 .setup {
   background-color: #000000;
   color: #FFFFFF;
-  display: grid;
-  grid-gap: 60px;
 
-  @media (min-width: #{$desktopBreakpoint}) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-row-gap: 180px;
-    grid-column-gap: 56px;
+  &__container {
+    display: grid;
+    grid-gap: 60px;
+
+    @media (min-width: #{$desktopBreakpoint}) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 180px;
+      grid-column-gap: 56px;
+    }
   }
 
   &__heading {

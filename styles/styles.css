@@ -154,6 +154,8 @@
 
 .header {
   background-color: #DF2626;
+}
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -336,11 +338,13 @@
 
 .composition {
   background-color: #FFCE00;
+}
+.composition__container {
   display: grid;
   grid-gap: 60px;
 }
 @media (min-width: 1024px) {
-  .composition {
+  .composition__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 0;
@@ -514,11 +518,13 @@
 .setup {
   background-color: #000000;
   color: #FFFFFF;
+}
+.setup__container {
   display: grid;
   grid-gap: 60px;
 }
 @media (min-width: 1024px) {
-  .setup {
+  .setup__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 180px;
