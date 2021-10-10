@@ -708,6 +708,9 @@
     line-height: 1.71;
   }
 }
+.setup__review-link:hover {
+  cursor: pointer;
+}
 
 .freelance {
   display: grid;
