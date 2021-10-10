@@ -1,4 +1,5 @@
 .welcome {
+  font-family: $primaryFontFamily;
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 60px;
@@ -7,6 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 56px;
+    grid-row-gap: 0;
   }
 
   &__title {
@@ -14,10 +16,12 @@
     font-size: 47px;
     font-weight: 400;
     line-height: 1.19;
+    max-width: 320px;
 
     @media (min-width: #{$tabletBreakpoint}) {
       font-size: 100px;
       line-height: 1.1;
+      max-width: 650px;
     }
 
     @media (min-width: #{$desktopBreakpoint}) {

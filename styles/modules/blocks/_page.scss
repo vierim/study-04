@@ -1,7 +1,6 @@
 .page {
   min-width: #{$mobileBreakpoint};
-  background-color: #FFFFFF;
-  font-family: $primaryFontFamily;
+  background-color: $primarySectionColor;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -13,17 +12,35 @@
     box-sizing: border-box;
     padding: 20px;
     margin: 0 auto;
-    max-width: 1440px;
+    min-width: 320px;
+    max-width: 728px;
 
     @media (min-width: #{$tabletBreakpoint}) {
       padding: 40px;
+      max-width: 768px;
     }
     @media (min-width: #{$desktopBreakpoint}) {
       padding: 50px;
+      max-width: 1440px;
     }
 
     &_vertical-xl {
       padding-top: 40px;
+
+      @media (min-width: #{$desktopBreakpoint}) {
+        padding-top: 50px;
+      }
+    }
+
+    &_vertical-s {
+      padding-top: 14px;
+
+      @media (min-width: #{$tabletBreakpoint}) {
+        padding-top: 40px;
+      }
+      @media (min-width: #{$desktopBreakpoint}) {
+        padding-top: 50px;
+      }
     }
 
     &_vertical-xs {

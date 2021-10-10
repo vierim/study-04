@@ -14,34 +14,34 @@
       <div class="header__container page__section page__section_vertical-xs">
         <img class="logo" src="./images/logo.png" alt="Логотип - Курс по фотографии">
         <nav class="header__navigation">
-          <button class="header__menu-button"></button>
+          <button class="header__menu-button" type="button" aria-label="Меню"></button>
           <ul class="header__menu">
             <li class="header__menu-item">
-              <a href="#" class="header__link">Композиция</a>
+              <a href="#composition" class="header__link">Композиция</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__link">Камера</a>
+              <a href="#setup" class="header__link">Камера</a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="header__link">Поиск заказов</a>
+              <a href="#freelance" class="header__link">Поиск заказов</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="welcome page__section">
+    <section class="welcome page__section page__section_vertical-s">
       <h1 class="welcome__title">Курс по фотографии</h1>
-      <img class="welcome__image" src="images/image-welcome.jpg" alt="Фотография в природных условиях - сосновый бор">
+      <img class="welcome__image" src="./images/image-welcome.jpg" alt="Фотография в природных условиях - сосновый бор">
       <div class="welcome__content">
         <p class="welcome__text">
           Фотография в природных условиях, уроки по композиции и по пользованию камерой.
         </p>
-        <a href="#" class="button welcome__button">Подробнее</a>
+        <a class="button welcome__button" href="#action-form">Подробнее</a>
       </div>
     </section>
 
-    <section class="composition">
+    <section class="composition" id="composition">
       <div class="composition__container page__section page__section_vertical-xl">
         <div class="composition__heading">
           <p class="composition__section-name">
@@ -50,7 +50,7 @@
           <h2 class="composition__title">Изучите композицию</h2>
         </div>
 
-        <img class="composition__image" src="images/image-composition.jpg" alt="Фотография дороги, по бокам хвойный лес">
+        <img class="composition__image" src="./images/image-composition.jpg" alt="Фотография дороги, по бокам хвойный лес">
 
         <div class="composition__content">
           <p class="composition__text">
@@ -59,7 +59,7 @@
           <p class="composition__text">
             Изучите композицию интуитивную и какие-то определённые законы.
           </p>
-          <a class="button composition__button" href="#">Записаться!</a>
+          <a class="button composition__button" href="#action-form">Записаться!</a>
         </div>
 
         <ul class="composition__rule-list">
@@ -79,7 +79,7 @@
       </div>
     </section>
 
-    <section class="setup">
+    <section class="setup" id="setup">
       <div class="setup__container page__section page__section_vertical-xl">
         <div class="setup__heading">
           <p class="setup__section-name">
@@ -88,7 +88,7 @@
           <h2 class="setup__title">Настройка Съемка Обработка</h2>
         </div>
 
-        <img class="setup__image" src="images/image-setup.jpg" alt="Фотография - густой лес">
+        <img class="setup__image" src="./images/image-setup.jpg" alt="Фотография - густой лес">
 
         <h3 class="setup__review-header">отзывы про часть о камерах:</h3>
 
@@ -115,7 +115,7 @@
       </div>
     </section>
 
-    <section class="freelance page__section page__section_vertical-xl">
+    <section class="freelance page__section page__section_vertical-xl" id="freelance">
       <div class="freelance__heading">
         <p class="freelance__section-name">
           поиск заказов
@@ -123,20 +123,23 @@
         <h2 class="freelance__title">Научим находить заказы!</h2>
       </div>
 
-      <img class="freelance__image" src="images/image-freelance.jpg" alt="Фотография - крона высокого дерева на фоне голубого неба">
+      <img class="freelance__image" src="./images/image-freelance.jpg" alt="Фотография - крона высокого дерева на фоне голубого неба">
 
       <div class="freelance__content">
         <p class="freelance__text">
           Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.
         </p>
-        <a class="freelance__button button" href="#">Записаться!</a>
+        <a class="freelance__button button" href="#action-form">Записаться!</a>
       </div>
     </section>
 
     <section class="action">
       <div class="action__container page__section page__section_vertical-xl">
-        <h2 class="action__title">Записаться! Сейчас!</h2>
-        <form class="order-form action__form">
+        <div class="action__heading">
+          <h2 class="action__title">Записаться!</h2>
+          <h2 class="action__title">Сейчас!</h2>
+        </div>
+        <form class="order-form action__form" id="action-form" name="order-form">
           <input type="email" class="order-form__email" name="email" placeholder="Ваша почта">
           <button type="submit" class="order-form__submit action__button button button_place_right" aria-label="Записаться">
             Записаться
