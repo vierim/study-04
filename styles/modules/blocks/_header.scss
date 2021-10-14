@@ -10,7 +10,7 @@
   }
 
   &__menu-button {
-    background-image: url('../images/menu-open.png');
+    background-image: url('../images/menu-open.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -24,7 +24,7 @@
     }
 
     &_close-icon {
-      background-image: url('../images/menu-close.png');
+      background-image: url('../images/menu-close.svg');
       width: 27px;
       height: 27px;
     }
