@@ -87,15 +87,15 @@
 
   &__link {
     font-family: $secondaryFontFamily;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
     color: #FBFBFB;
-    transition: all 300ms ease-in-out;
+    transition: text-shadow .3s ease-in-out;
 
     &:hover {
-      font-weight: 700;
+      text-shadow: 0.6px 0 0 currentColor;
       cursor: pointer;
     }
   }

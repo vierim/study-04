@@ -14,7 +14,7 @@
   text-decoration: none;
   box-sizing: border-box;
   padding: 6px 0;
-  transition: all 200ms ease-in-out;
+  transition: text-shadow 300ms ease-in-out;
 
   @media (min-width: #{$tabletBreakpoint}) {
     min-width: 228px;
@@ -27,7 +27,7 @@
 
   &:hover {
     cursor: pointer;
-    font-weight: 500;
+    text-shadow: 0.4px 0 0 currentColor;
   }
 
   &_place_right {
