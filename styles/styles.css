@@ -282,9 +282,9 @@
 @media (min-width: 1024px) {
   .header__menu {
     position: static;
-    padding: 0;
     transform: unset;
     width: 100%;
+    height: unset;
   }
 }
 .header__menu_opened {
