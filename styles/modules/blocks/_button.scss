@@ -4,7 +4,7 @@
   min-height: 40px;
   border: 2px solid #000000;
   background-color: $primarySectionColor;
-  border-radius: 9999px;
+  border-radius: 25px;
   font-family: $primaryFontFamily;
   text-align: center;
   color: $primaryTextColor;
@@ -45,6 +45,6 @@
   }
 
   &_hover {
-    font-weight: 500;
+    text-shadow: 0.4px 0 0 currentColor;
   }
 }

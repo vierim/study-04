@@ -2,50 +2,16 @@
   font-family: $primaryFontFamily;
   background-color: $importantSectionColor;
 
-  &__heading {
-    border-top: 1px solid $secondaryTextColor;
-    padding-top: 20px;
-    margin-bottom: 200px;
-
-    @media (min-width: #{$tabletBreakpoint}) {
-      border-top: none;
-      padding-top: 0;
-      margin-bottom: 190px;
-    }
-
-    @media (min-width: #{$desktopBreakpoint}) {
-      margin-bottom: 120px;
-    }
-  }
-
   &__title {
-    margin: 0;
     font-size: 48px;
     font-weight: 400;
     line-height: 1.04;
     color: $secondaryTextColor;
     box-sizing: border-box;
-    max-width: 320px;
-
-    &:first-of-type {
-      margin-bottom: 10px;
-
-      &::before {
-        @media (min-width: #{$desktopBreakpoint}) {
-          content: '';
-          position: absolute;
-          background-image: url(../images/link-right.svg);
-          top: 8px;
-          left: 0;
-          width: 129px;
-          height: 95px;
-        }
-      }
-
-      @media (min-width: #{$desktopBreakpoint}) {
-        margin-bottom: 0;
-      }
-    }
+    max-width: 688px;
+    border-top: 1px solid $secondaryTextColor;
+    padding-top: 20px;
+    margin: 0 0 200px;
 
     @media (min-width: #{$tabletBreakpoint}) {
       font-size: 100px;
@@ -53,16 +19,28 @@
       max-width: 580px;
       border-top: none;
       padding-top: 0;
+      margin-bottom: 190px;
     }
 
     @media (min-width: #{$desktopBreakpoint}) {
       font-size: 120px;
       padding-left: 179px;
       max-width: 700px;
+      margin-bottom: 120px;
       position: relative;
     }
 
-
+    &::before {
+      @media (min-width: #{$desktopBreakpoint}) {
+        content: '';
+        position: absolute;
+        background-image: url(../images/link-right.svg);
+        top: 10px;
+        left: 0;
+        width: 129px;
+        height: 95px;
+      }
+    }
   }
 
   &__form {

@@ -32,6 +32,15 @@
       }
     }
 
+    &_vertical-halfxl {
+      padding-top: 40px;
+
+      @media (min-width: #{$desktopBreakpoint}) {
+        padding-top: 50px;
+        padding-bottom: 36px;
+      }
+    }
+
     &_vertical-s {
       padding-top: 14px;
 

@@ -13,7 +13,7 @@
       <div class="header__container page__section page__section_vertical-xs">
         <img class="logo" src="./images/logo.png" alt="Логотип - Курс по фотографии">
         <nav class="header__navigation">
-          <button class="header__menu-button" type="button" aria-label="Меню"></button>
+          <button class="header__menu-button header__menu-button_action_open" type="button" aria-label="Меню"></button>
           <ul class="header__menu">
             <li class="header__menu-item">
               <a href="#composition" class="header__link">Композиция</a>
@@ -29,123 +29,122 @@
       </div>
     </header>
 
-    <section class="welcome page__section page__section_vertical-s">
-      <h1 class="welcome__title">Курс по фотографии</h1>
-      <img class="welcome__image" src="./images/image-welcome.jpg" alt="Фотография в природных условиях - сосновый бор">
-      <div class="welcome__content">
-        <p class="welcome__text">
-          Фотография в природных условиях, уроки по композиции и по пользованию камерой.
-        </p>
-        <a class="button welcome__button" href="#action-form">Подробнее</a>
-      </div>
-    </section>
-
-    <section class="composition" id="composition">
-      <div class="composition__container page__section page__section_vertical-xl">
-        <div class="composition__heading">
-          <p class="composition__section-name">
-            Композиция
+    <main>
+      <section class="welcome page__section page__section_vertical-s">
+        <h1 class="welcome__title">Курс по фотографии</h1>
+        <img class="welcome__image" src="./images/image-welcome.jpg" alt="Фотография в природных условиях - сосновый бор">
+        <div class="welcome__content">
+          <p class="welcome__text">
+            Фотография в природных условиях, уроки по композиции и по пользованию камерой.
           </p>
-          <h2 class="composition__title">Изучите композицию</h2>
+          <a class="button welcome__button" href="#action-form">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="composition" id="composition">
+        <div class="composition__container page__section page__section_vertical-xl">
+          <div class="composition__heading">
+            <p class="composition__section-name">
+              Композиция
+            </p>
+            <h2 class="composition__title">Изучите композицию</h2>
+          </div>
+
+          <img class="composition__image" src="./images/image-composition.jpg" alt="Фотография дороги, по бокам хвойный лес">
+
+          <div class="composition__content">
+            <p class="composition__text">
+              Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__span-accent">снимке</span>.
+            </p>
+            <p class="composition__text">
+              Изучите композицию интуитивную и какие-то определённые законы.
+            </p>
+            <a class="button composition__button" href="#action-form">Записаться!</a>
+          </div>
+
+          <ul class="composition__rule-list">
+            <li class="composition__rule-item">
+              Правило третей, при котором нужно распологать объекты на пересечениях.
+            </li>
+            <li class="composition__rule-item">
+              Простота: убирай всё лишнее и кадрируй!
+            </li>
+            <li class="composition__rule-item">
+              Равновесие: уравновесь пятна объекта и фона.
+            </li>
+            <li class="composition__rule-item">
+              3D глубина кадра: расположи объект позади и перед другими предметами.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="setup" id="setup">
+        <div class="setup__container page__section page__section_vertical-xl">
+          <div class="setup__heading">
+            <p class="setup__section-name">
+              камера
+            </p>
+            <h2 class="setup__title">Настройка Съемка Обработка</h2>
+          </div>
+
+          <img class="setup__image" src="./images/image-setup.jpg" alt="Фотография - густой лес">
+
+          <h3 class="setup__review-header">отзывы про часть о камерах:</h3>
+
+          <ul class="setup__review-list">
+            <li class="setup__review-item">
+              <div class="setup__review-block">
+                <p class="setup__review-text">
+                  на этом курсе я научился пользоватся камерой, как настоящий профессионал!
+                </p>
+                <h4 class="setup__review-person">Питер, водитель.</h4>
+                <a href="https://www.instagram.com/piter123/" target="_blank" class="setup__review-link">@piter123</a>
+              </div>
+            </li>
+            <li class="setup__review-item">
+              <div class="setup__review-block">
+                <p class="setup__review-text">
+                  супер крутой курс! на части про фотики я стал разбираться в предназначении кнопок
+                </p>
+                <h4 class="setup__review-person">Джон, спортсмен.</h4>
+                <a href="https://www.instagram.com/piter123/" target="_blank" class="setup__review-link">@john_sport</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="freelance page__section page__section_vertical-xl" id="freelance">
+        <div class="freelance__heading">
+          <p class="freelance__section-name">
+            поиск заказов
+          </p>
+          <h2 class="freelance__title">Научим находить заказы!</h2>
         </div>
 
-        <img class="composition__image" src="./images/image-composition.jpg" alt="Фотография дороги, по бокам хвойный лес">
+        <img class="freelance__image" src="./images/image-freelance.jpg" alt="Фотография - крона высокого дерева на фоне голубого неба">
 
-        <div class="composition__content">
-          <p class="composition__text">
-            Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__bolder">снимке</span>.
+        <div class="freelance__content">
+          <p class="freelance__text">
+            Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.
           </p>
-          <p class="composition__text">
-            Изучите композицию интуитивную и какие-то определённые законы.
-          </p>
-          <a class="button composition__button" href="#action-form">Записаться!</a>
+          <a class="freelance__button button" href="#action-form">Записаться!</a>
         </div>
+      </section>
 
-        <ul class="composition__rule-list">
-          <li class="composition__rule-item">
-            Правило третей, при котором нужно распологать объекты на пересечениях.
-          </li>
-          <li class="composition__rule-item">
-            Простота: убирай всё лишнее и кадрируй!
-          </li>
-          <li class="composition__rule-item">
-            Равновесие: уравновесь пятна объекта и фона.
-          </li>
-          <li class="composition__rule-item">
-            3D глубина кадра: расположи объект позади и перед другими предметами.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="setup" id="setup">
-      <div class="setup__container page__section page__section_vertical-xl">
-        <div class="setup__heading">
-          <p class="setup__section-name">
-            камера
-          </p>
-          <h2 class="setup__title">Настройка Съемка Обработка</h2>
+      <section class="action">
+        <div class="action__container page__section page__section_vertical-halfxl">
+          <h2 class="action__title">Записаться! Сейчас!</h2>
+          <form class="order-form action__form" id="action-form" name="order-form">
+            <input type="email" class="order-form__email" name="email" placeholder="Ваша почта" required>
+            <button type="submit" class="order-form__submit action__button button button_place_right" aria-label="Записаться">
+              Записаться!
+            </button>
+          </form>
         </div>
-
-        <img class="setup__image" src="./images/image-setup.jpg" alt="Фотография - густой лес">
-
-        <h3 class="setup__review-header">отзывы про часть о камерах:</h3>
-
-        <ul class="setup__review-list">
-          <li class="setup__review-item">
-            <article class="setup__review-block">
-              <p class="setup__review-text">
-                на этом курсе я научился пользоватся камерой, как настоящий профессионал!
-              </p>
-              <h4 class="setup__review-person">Питер, водитель.</h4>
-              <a href="https://www.instagram.com/piter123/" target="_blank" class="setup__review-link">@piter123</a>
-            </article>
-          </li>
-          <li class="setup__review-item">
-            <article class="setup__review-block">
-              <p class="setup__review-text">
-                супер крутой курс! на части про фотики я стал разбираться в предназначении кнопок
-              </p>
-              <h4 class="setup__review-person">Джон, спортсмен.</h4>
-              <a href="https://www.instagram.com/piter123/" target="_blank" class="setup__review-link">@john_sport</a>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="freelance page__section page__section_vertical-xl" id="freelance">
-      <div class="freelance__heading">
-        <p class="freelance__section-name">
-          поиск заказов
-        </p>
-        <h2 class="freelance__title">Научим находить заказы!</h2>
-      </div>
-
-      <img class="freelance__image" src="./images/image-freelance.jpg" alt="Фотография - крона высокого дерева на фоне голубого неба">
-
-      <div class="freelance__content">
-        <p class="freelance__text">
-          Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.
-        </p>
-        <a class="freelance__button button" href="#action-form">Записаться!</a>
-      </div>
-    </section>
-
-    <section class="action">
-      <div class="action__container page__section page__section_vertical-xl">
-        <div class="action__heading">
-          <h2 class="action__title">Записаться!</h2>
-          <h2 class="action__title">Сейчас!</h2>
-        </div>
-        <form class="order-form action__form" id="action-form" name="order-form">
-          <input type="email" class="order-form__email" name="email" placeholder="Ваша почта">
-          <button type="submit" class="order-form__submit action__button button button_place_right" aria-label="Записаться">
-            Записаться
-          </button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__container page__section">

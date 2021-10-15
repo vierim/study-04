@@ -1,3 +1,21 @@
+@keyframes show-close-icon {
+  from {
+    background-image: url('../images/menu-open.svg');
+  }
+  to {
+    background-image: url('../images/menu-close.svg');
+  }
+}
+
+@keyframes show-open-icon {
+  from {
+    background-image: url('../images/menu-close.svg');
+  }
+  to {
+    background-image: url('../images/menu-open.svg');
+  }
+}
+
 .header {
   font-family: $primaryFontFamily;
   background-color: $importantSectionColor;
@@ -10,54 +28,64 @@
   }
 
   &__menu-button {
-    background-image: url('../images/menu-open.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-color: transparent;
     border: none;
-    width: 32px;
-    height: 23px;
 
     @media (min-width: #{$desktopBreakpoint}) {
       display: none;
     }
 
-    &_close-icon {
+    &_action_open {
+      background-image: url('../images/menu-open.svg');
+      width: 32px;
+      height: 23px;
+      animation: show-open-icon 0.5s linear 1 forwards;
+    }
+
+    &_action_close {
       background-image: url('../images/menu-close.svg');
       width: 27px;
       height: 27px;
+      animation: show-close-icon 0.5s linear 1 forwards;
     }
   }
 
   &__menu {
-    display: none;
     position: absolute;
     width: 100%;
     background-color: $importantSectionColor;
-    list-style: none;
     padding: 6px 0 26px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     top: 70px;
     left: 0;
+    transform: translate(100%);
+    transition: transform 0.4s ease-in-out;
 
-    &_opened {
-      display: block;
-
-      @media (min-width: #{$tabletBreakpoint}) {
-        display: flex;
-        align-items: center;
-        top: 0;
-        width: calc(100% - 70px);
-        height: 84px;
-        padding: 0;
-      }
+    @media (min-width: #{$tabletBreakpoint}) {
+      transform: translate(120%);
+      flex-direction: row;
+      align-items: center;
+      top: 0;
+      width: calc(100% - 70px);
+      height: 84px;
+      padding: 0;
     }
 
     @media (min-width: #{$desktopBreakpoint}) {
       position: static;
-      display: flex;
       padding: 0;
+      transform: unset;
+      width: 100%;
+    }
+
+    &_opened {
+      transform: translate(0);
     }
   }
 

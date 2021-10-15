@@ -85,7 +85,6 @@
     }
 
     @media (min-width: #{$desktopBreakpoint}) {
-      // width: unset;
       max-width: 100%;
       max-height: 832px;
       grid-column: 2 / 3;
@@ -118,8 +117,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    // display: flex;
-    // flex-direction: column;
 
     @media (min-width: #{$desktopBreakpoint}) {
       flex-direction: row;
@@ -147,7 +144,6 @@
       padding-top: 0;
       padding-bottom: 0;
       border-bottom: none;
-      // margin-right: 172px;
     }
 
     &:first-of-type {
@@ -157,10 +153,6 @@
     &:last-of-type {
       padding-bottom: 0;
       border-bottom: none;
-
-      @media (min-width: #{$desktopBreakpoint}) {
-        // margin-right: 89px;
-      }
     }
   }
 

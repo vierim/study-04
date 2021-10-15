@@ -29,5 +29,9 @@
       color: $primaryTextColor;
       opacity: 1;
     }
+
+    &_status_empty {
+      background-color: rgb(245, 188, 82);
+    }
   }
 }
