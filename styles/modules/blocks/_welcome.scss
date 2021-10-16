@@ -73,10 +73,10 @@
       max-width: 469px;
       font-size: 20px;
       line-height: 1.4;
+      margin-left: 4px;
     }
+    
     @media (min-width: #{$desktopBreakpoint}) {
-      box-sizing: border-box;
-      padding-left: 5px;
       padding-top: 2px;
     }
   }
