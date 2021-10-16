@@ -7,7 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-row-gap: 106px;
-    grid-column-gap: 56px;
+    grid-column-gap: 43px;
   }
 
   &__heading {
@@ -40,6 +40,7 @@
 
     @media (min-width: #{$desktopBreakpoint}) {
       margin-bottom: 50px;
+      margin-left: 4px;
     }
   }
 
@@ -77,9 +78,8 @@
       grid-row: 2 / 3;
       align-self: center;
       justify-self: end;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
+      box-sizing: border-box;
+      padding-top: 25px;
     }
   }
 
