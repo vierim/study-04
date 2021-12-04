@@ -1,0 +1,16 @@
+@import url('../vendor/normalize.css');
+
+@import "./modules/_variables.scss";
+@import "./modules/_fonts.scss";
+
+@import "./modules/blocks/_page.scss";
+@import "./modules/blocks/_button.scss";
+@import "./modules/blocks/_logo.scss";
+@import "./modules/blocks/_header.scss";
+@import "./modules/blocks/_welcome.scss";
+@import "./modules/blocks/_composition.scss";
+@import "./modules/blocks/_setup.scss";
+@import "./modules/blocks/_freelance.scss";
+@import "./modules/blocks/_order-form.scss";
+@import "./modules/blocks/_action.scss";
+@import "./modules/blocks/_footer.scss";

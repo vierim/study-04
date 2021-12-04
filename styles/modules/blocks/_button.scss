@@ -1,0 +1,50 @@
+.button {
+  display: inline-block;
+  min-width: 169px;
+  min-height: 40px;
+  border: 2px solid #000000;
+  background-color: $primarySectionColor;
+  border-radius: 25px;
+  font-family: $primaryFontFamily;
+  text-align: center;
+  color: $primaryTextColor;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 4px 0 5px;
+  transition: text-shadow 300ms ease-in-out;
+
+  @media (min-width: #{$tabletBreakpoint}) {
+    min-width: 228px;
+    min-height: 49px;
+    font-size: 18px;
+    line-height: 1.56;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0.4px 0 0 currentColor;
+  }
+
+  &_place_right {
+    padding: 9px 20px;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
+    border-radius: 0 8px 8px 0;
+    width: 37%;
+    min-width: 105px;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 14px;
+    }
+  }
+
+  &_hover {
+    text-shadow: 0.4px 0 0 currentColor;
+  }
+}

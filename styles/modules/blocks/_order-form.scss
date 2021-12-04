@@ -1,0 +1,37 @@
+.order-form {
+  width: 100%;
+  max-width: 553px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &__email {
+    width: 63%;
+    height: 50px;
+    border: 2px solid #000000;
+    border-right: none;
+    box-sizing: border-box;
+    padding: 13px 20px;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 2.2;
+    font-weight: 400;
+    letter-spacing: 0.375px;
+    font-family: $primaryFontFamily;
+
+    @media (min-width: #{$tabletBreakpoint}) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    &::placeholder {
+      color: $primaryTextColor;
+      opacity: 1;
+    }
+
+    &_status_empty {
+      background-color: rgb(245, 188, 82);
+    }
+  }
+}
